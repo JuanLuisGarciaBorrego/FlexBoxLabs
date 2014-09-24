@@ -1,0 +1,25 @@
+/**
+* Juan Luis García Borrego
+* @JuanluGarciaB
+*/
+
+#container{
+    border:3px solid blueviolet;
+    background: mediumpurple;
+    height: 300px;
+}
+
+.items{
+    border:3px solid deepskyblue;
+    background: cornflowerblue;
+    width: 20%;
+}
+    .items:nth-of-type(1){
+
+    }
+    .items:nth-of-type(2){
+
+    }
+    .items:nth-of-type(3){
+
+    }
