@@ -1,0 +1,36 @@
+/**
+* Juan Luis García Borrego
+* @JuanluGarciaB
+*/
+
+.container{
+    border:3px solid blueviolet;
+    background: mediumpurple;
+    /*FlexBox + Prefijos */
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+}
+.wrap{
+    flex-wrap:wrap;
+}
+.wrap-reverse{
+    flex-wrap: wrap-reverse;
+}
+.items{
+    border:3px solid deepskyblue;
+    background: cornflowerblue;
+}
+    .items:nth-of-type(1){
+
+    }
+    .items:nth-of-type(2){
+
+    }
+    .items:nth-of-type(3){
+    }
