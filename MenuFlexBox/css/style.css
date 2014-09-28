@@ -1,0 +1,89 @@
+/**
+* Juan Luis García Borrego
+* @JuanluGarciaB
+*/
+
+#container{
+    overflow: hidden;
+    padding: 20px;
+}
+    .header{
+        max-width: 950px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+        .logo{
+            width: 130px;
+            order: 1;
+        }
+        .menuPortada{
+            flex-grow: 1;
+            order: 3;
+            margin-top: 35px;
+        }
+            .menuPortada ul{
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: row;
+            }
+                .menuPortada ul li{
+                    box-sizing: border-box;
+                    margin-left: 4px;
+                }
+                    .menuPortada ul li a{
+                        display: block;
+                        padding: 10px 10px;
+                        text-decoration: none;
+                        background: #ffcc66;
+                        color: #000000;
+                        text-decoration: none;
+                        border:3px solid #000;
+                    }
+                        .menuPortada ul li a:hover, .menuPortada ul li a.actual{
+                            background: #f17938;
+                        }
+        .icoMenuMovil{
+            width: 40px;
+            order: 2;
+            margin-top: 35px;
+            display: none;
+        }
+            .icoMenuMovil img {
+                box-sizing: border-box;
+                padding: 5px;
+                cursor: pointer;
+                float: right;
+            }
+
+/*::::::::::::::MediaQueries::::::::::::::::*/
+
+@media all and (max-width: 700px){
+    .icoMenuMovil{
+        display: block;
+        flex-grow: 1;
+    }
+    .menuPortada{
+        flex-grow: 0;
+        flex-basis: 100%;
+        margin-top: 10px;
+    }
+        .menuPortada ul{
+            display: none;
+            text-align: center;
+            flex-direction: column;
+        }
+            .menuPortada ul li{
+                margin-left: 0px;
+                margin-bottom: 4px;
+            }
+}
+
+@media all and (min-width: 700px) {
+    .menuPortada ul {
+        display: flex !important;
+        flex-direction: row;
+    }
+}
+
